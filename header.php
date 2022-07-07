@@ -39,7 +39,7 @@ if ( RDTheme::$options['preloader'] ) {
 		<?php
 	
 		if ( RDTheme::$top_bar == 1 || RDTheme::$top_bar == 'on' ) {
-			//get_template_part( 'template-parts/header/header-top', RDTheme::$top_bar_style );
+			get_template_part( 'template-parts/header/header-top', RDTheme::$top_bar_style );
 		}
 	
 		get_template_part( 'template-parts/header/header-8' );

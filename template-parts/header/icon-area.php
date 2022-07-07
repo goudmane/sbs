@@ -8,7 +8,7 @@
 <div class="header-icon-area">
 	<?php
 
-	if ( RDTheme::$options['menu_contact_us'] && '8' == RDTheme::$header_style ){
+	if ( RDTheme::$options['menu_contact_us'] && true){
 		get_template_part( 'template-parts/header/menu', 'contact' );
 	}
 
