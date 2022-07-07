@@ -70,7 +70,7 @@ if ( ! class_exists( 'RDTheme' ) ) {
 				return;
 			}
 			
-			global $eikra;print_r($eikra) ;
+			global $eikra;
 			self::$options = $eikra ? $eikra : [];
 
 			// Prevent Redux first activation error on admin
