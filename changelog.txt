@@ -1,0 +1,50 @@
+Version 1.0.6
+    Added:
+    - WP 6.0 compatibility
+
+    Fixed:
+    - Theme styles
+    - Improve theme styles
+
+    Changed:
+    - Update demo data
+
+    Added:
+    - ThemeREX Updater
+
+Version 1.0.5
+    Added:
+    - WP 5.8 compatibility
+    - PHP 8.0 compatibility
+    - Compatibility with Slider Revolution 6.5+
+    - Compatibility with Essential Grid 3.0.13
+
+    Fixed:
+    - Theme styles
+
+Version 1.0.4
+    Fixed:
+        - Update plugins to their latest versions
+        - Improve theme styles
+        - Update scripts  libraries
+
+
+Version 1.0.3
+	- Themerex Addons vulnarability fixed
+
+Version 1.0.2
+	Fixed:
+		- Improve theme styles
+		- Elementor styles
+        - Scripts libraries updated
+        - Plugins updated
+
+Version 1.0.1
+	Fixed:
+		- Improve theme styles
+
+Version 1.0.0
+
+
+
+

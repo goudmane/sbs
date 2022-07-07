@@ -1,0 +1,125 @@
+/* Blog layout: Excerpt 
+------------------------- */
+.post_layout_excerpt {
+	position:relative;
+	margin-bottom:0;
+}
+.post_layout_excerpt + .post_layout_excerpt {
+	margin-top: 5.9rem;
+}
+.post_layout_excerpt:not(.sticky) + .post_layout_excerpt:not(.sticky) {
+	padding-top: 0;
+}
+.post_layout_excerpt.sticky {
+	padding: 0;
+	overflow: hidden;
+}
+.post_layout_excerpt.post_format_audio{
+	.post_header{
+		margin-top: 1.8em;
+	}
+}
+.blog_style_excerpt{
+	.post_layout_excerpt, .post_layout_sticky{
+		.post_meta_item.post_share{
+			@include font(12px);
+			.socials_share.socials_type_drop{
+				 .socials_caption {
+					 @include font(12px);
+				}
+			}
+		}
+	}
+}
+
+.post_layout_excerpt .post_featured {
+	display: inline-block;
+	margin-bottom:1.8em;
+	
+}
+
+.post_layout_excerpt.post_format_audio .post_featured.without_thumb,
+.post_layout_excerpt.post_format_gallery .post_featured.without_thumb {
+	display:block;
+}
+.post_layout_excerpt .post_header {
+	margin: 0;
+	position:relative;
+}
+.post_layout_excerpt .post_header .post_price {
+	width: auto;
+	@include abs-rt;
+	@include font(2.5em, 1.5em);
+}
+.post_layout_excerpt .post_title {
+	margin: 0;
+	@include font(20px, 26px);
+	@media(min-width: 768px) and (max-width: 1023px){
+		@include font(24px, 28px);
+	}
+	@media(min-width: 1024px){
+		@include font(30px, 35px);
+	}
+}
+.trx_addons_icon-comment:before{
+	content:none;
+}
+.post_meta {
+	margin-top:0;
+	.post_categories{
+		a{
+			text-align: center;
+			font-size: 10px;
+			line-height: 1.1em;
+			font-weight: 900;
+			letter-spacing: .6px;
+			padding: 9.5px 10px;
+			text-transform: uppercase;
+			display: inline-block;
+			@media(min-width: 768px){
+				padding: 9.5px 19px;
+			}
+		}
+		&+.post_date{
+			margin-left:15px;
+		}
+	}
+}
+.post_meta .post_categories a{
+	margin-bottom:5px;
+}
+
+
+.post_layout_excerpt .post_meta + .post_title{
+	margin-top:0.8em;
+}
+
+
+.post_layout_excerpt .post_header + .post_content {
+	margin-top:1rem;
+}
+
+.post_layout_excerpt.post_format_quote{
+	blockquote{
+		margin:0 0 2.5em;
+	}
+
+}
+.post_layout_excerpt.post_format_video{
+	.post_featured.with_thumb .post_video_hover{
+		font-size: 1.8em;
+		line-height: 2.05em;
+	}
+}
+.single-post.single-format-audio{
+	.sc_widget_audio{
+		padding:0 15px;
+	}
+}
+
+
+	// First post large in the Classic and Masonry
+body[class*="blog_style_classic"] .post_layout_excerpt,
+body[class*="blog_style_masonry"] .post_layout_excerpt {
+	margin-bottom: 3em;
+}

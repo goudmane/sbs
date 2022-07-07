@@ -1,0 +1,60 @@
+/* MailChimp for WP styles
+----------------------------------------------------------------- */
+form.mc4wp-form {
+	position:relative;
+}
+form.mc4wp-form .mc4wp-form-fields input[type="email"] {
+	width: 100%;
+	vertical-align:top;
+	@include border-box;
+	min-height: 66px;
+}
+form.mc4wp-form .mc4wp-form-fields input[type="submit"] {
+	vertical-align:top;
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+form.mc4wp-form .mc4wp-alert {
+	margin: 1.5em 0;
+	padding: 1em;
+	line-height:1.5em;
+}
+
+form.mc4wp-form p {
+	margin: 0;
+}
+form.mc4wp-form .mc4wp-form-fields input[type="submit"]{
+	padding-left: 3.25em;
+	padding-right: 3.25em;
+}
+form.mc4wp-form p + p,
+form.mc4wp-form input + p {
+	margin-top: 1em;
+}
+
+form.mc4wp-form .mc4wp-form-fields {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+form.mc4wp-form .mc4wp-form-fields > p + p {
+	flex: 0 1 auto;
+	align-self: center;
+	margin-top: 7px;
+	margin-right:0;
+}
+form.mc4wp-form .mc4wp-form-fields > p {
+	flex: 1 1 auto;
+	margin-top: 7px;
+	margin-right:7px;
+}
+form.mc4wp-form .mc4wp-form-fields .check_form {
+	flex: 1 1 100%;
+	text-align: left;
+	margin-top: 7px;
+}
+form.mc4wp-form .mc4wp-form-fields input[type="submit"] {
+	position: relative !important;
+	min-height: 66px;
+}
