@@ -190,14 +190,11 @@ if ( ! class_exists( 'RDTheme_Helper' ) ) {
 				if ( ! empty( $rdtheme_menuid ) && $rdtheme_menuid != 'default' ) {
 					$rdtheme_pagemenu = $rdtheme_menuid;
 				}
-				echo "1";
 			}
 			if ( $rdtheme_pagemenu ) {
 				$nav_menu_args = [ 'menu' => $rdtheme_pagemenu, 'container' => 'nav' ];
-				echo "2";
 			} else {
 				$nav_menu_args = [ 'theme_location' => 'primary', 'container' => 'nav', 'fallback_cb' => false ];
-				echo "3";
 			}
 
 			return $nav_menu_args;
